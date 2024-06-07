@@ -14,4 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Defina o comando padrão para executar o aplicativo
-CMD ["uvicorn", "app.main:app"]
+EXPOSE 8080
+CMD ["uvicorn", "app.main:app", "--host", "8080", "--reload"]
