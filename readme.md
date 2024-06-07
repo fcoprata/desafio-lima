@@ -24,7 +24,7 @@ To run the scraper, follow these steps:
 ## API Endpoint
 
 To access the scraped data programmatically, you can use the following API endpoint:
-[https://desafio-lima2-vszbb4vzda-uc.a.run.app/docs][Api Endpoint]
+[https://desafio-lima2-vszbb4vzda-uc.a.run.app/docs](Api Endpoint)
 
 ## Requirements
 
