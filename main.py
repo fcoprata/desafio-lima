@@ -1,5 +1,6 @@
 from Scrapper import Scrapper
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 from google.cloud import bigquery
 import os
 import uvicorn
@@ -11,6 +12,17 @@ client = bigquery.Client(project=project_id)
 # Create an instance of the Scrapper class and the FastAPI app
 app = FastAPI()
 obj = Scrapper()
+
+
+@app.get("/", include_in_schema=False)
+def redirect_to_swagger():
+    """
+    Redirects to the Swagger UI.
+
+    Returns:
+        RedirectResponse: Redirects to the Swagger UI.
+    """
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/json")

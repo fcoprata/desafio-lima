@@ -21,6 +21,10 @@ To run the scraper, follow these steps:
 3. Once the server is running, open your web browser and go to [https://127.0.0.1:8000/docs](https://127.0.0.1:8000/docs).
 4. Click on "Try it out" and enter the URL you want to scrape.
 5. Click on "Execute" to initiate the scraping process.
+## API Endpoint
+
+To access the scraped data programmatically, you can use the following API endpoint:
+[https://desafio-lima2-vszbb4vzda-uc.a.run.app/docs][Api Endpoint]
 
 ## Requirements
 
