@@ -1,7 +1,14 @@
 # BBC Scraper
 
 This project is a web scraper for the BBC website. It allows you to retrieve data from specific URLs and display it in a user-friendly format.
+[https://www.bbc.com/portuguese](https://www.bbc.com/portuguese)
+## Images
 
+Here are some images from the assets folder:
+
+![Image 1](assets/image1.png)
+![Image 2](assets/image2.png)
+![Image 3](assets/image3.png)
 ## Getting Started
 
 To run the scraper, follow these steps:
@@ -19,8 +26,7 @@ To run the scraper, follow these steps:
 
 Make sure you have the following dependencies installed:
 
-- Python 3.x
-- uvicorn
+``` pip install -r requirements.txt ```
 
 ## Contributing
 
