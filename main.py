@@ -2,6 +2,7 @@ from Scrapper import Scrapper
 from fastapi import FastAPI
 from google.cloud import bigquery
 import os
+import uvicorn
 
 # # Set the environment variables
 project_id = os.environ.get("PROJECT_ID")
@@ -126,3 +127,8 @@ def search_keyword(keyword: str):
         return f"No articles found containing the keyword: {keyword}"
 
     return data
+
+
+if __name__ == "__main__":
+
+    uvicorn.run(app, host="0.0.0.0", port=8080)
